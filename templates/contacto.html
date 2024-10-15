@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACTOS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='contacto.css') }}"> 
+</head>
+
+<body>
+<img src="{{ url_for('static', filename='imagenes/ubi.jpg') }}" alt="Imagen a Tamaño Completo" class="full-size-image">
+
+<header class="container">
+    <img src="{{ url_for('static', filename='imagenes/logo1.png') }}" alt="Logo" class="logo">
+    <div>
+        <h1><b>MI</b> TELEFERICO</b></h1>
+        <br>
+        <nav>
+            <ul><br>
+                <li><a href="{{ url_for('index') }}"><b>INICIO</b></a></li>
+                <br>
+                <li><a href="{{ url_for('quienes_somos') }}"><b>QUIÉNES SOMOS</b></a></li>
+                <br>
+                <li><a href="{{ url_for('servicios') }}"><b>SERVICIOS</b></a></li>
+                <br>
+                <li><a href="{{ url_for('noticias') }}"><b>NOTICIAS</b></a></li>
+                <br>
+                <li><a href="{{ url_for('contacto') }}"><b>CONTACTO</b></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h1>Contáctanos</h1>
+
+<form action="enviar.php" method="POST">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="email">Correo electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="mensaje">Mensaje:</label>   
+
+    <textarea id="mensaje" name="mensaje" required></textarea>
+
+    <button type="submit">Enviar</button>
+</form>   
+
+
+<h2>Nuestra ubicación</h2>
+<p><strong>Dirección:</strong> Av. Perú, La Paz, Bolivia</p>
+<p><strong>Teléfono:</strong> +591 77597216</p>
+<p><strong>Correo electrónico:</strong> floresfarfanhernan@gmail.com</p>
+
+<div id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54278.05234954367!2d-68.23367345493013!3d-16.487392117610383!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x915edff540c05e71%3A0x473363a5899d81ff!2sEstaci%C3%B3n%20Telef%C3%A9rico%20Central!5e1!3m2!1ses-419!2sbo!4v1729020157108!5m2!1ses-419!2sbo" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</main>
+
+
+</body>
+</html>

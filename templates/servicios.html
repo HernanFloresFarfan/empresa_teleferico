@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVICIOS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='servicios.css') }}"> <!-- Enlace al CSS externo -->
+</head>
+<body>
+    <img src="{{ url_for('static', filename='imagenes/fondotel1.jpg') }}" alt="Imagen de Fondo" class="full-size-image">
+
+    <header class="container">
+        <img src="{{ url_for('static', filename='imagenes/logo1.png') }}" alt="Logo" class="logo">
+        <div>
+            <h1><b>MI</b> TELEFERICO</h1>
+            <nav>
+                <ul><br>
+                    <li><a href="{{ url_for('index') }}"><b>INICIO</b></a></li>
+                    <br>
+                    <li><a href="{{ url_for('quienes_somos') }}"><b>QUIÉNES SOMOS</b></a></li>
+                    <br>
+                    <li><a href="{{ url_for('servicios') }}"><b>SERVICIOS</b></a></li>
+                    <br>
+                    <li><a href="{{ url_for('noticias') }}"><b>NOTICIAS</b></a></li>
+                    <br>
+                    <li><a href="{{ url_for('contacto') }}"><b>CONTACTO</b></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="service">
+            <img src="{{ url_for('static', filename='imagenes/transpu.jfif') }}" alt="Transporte público" class="service-image">
+            <div>
+                <h2>Transporte público</h2>
+                <p>Este es el servicio principal y más conocido de Mi Teleférico. Conecta diversas zonas de las ciudades, facilitando 
+                    el desplazamiento de miles de personas diariamente.</p>
+            </div>
+        </section>
+
+        <section class="service">
+            <img src="{{ url_for('static', filename='imagenes/galar.png') }}" alt="Galerías de arte" class="service-image">
+            <div>
+                <h2>Galerías de arte</h2>
+                <p>A lo largo de las líneas, se encuentran diversas galerías de arte que exhiben obras de artistas bolivianos, 
+                    promoviendo la cultura y el arte local.</p>
+            </div>
+        </section>
+
+        <section class="service">
+            <img src="{{ url_for('static', filename='imagenes/espaedu.jfif') }}" alt="Espacios educativos" class="service-image">
+            <div>
+                <h2>Espacios educativos</h2>
+                <p>Mi Teleférico cuenta con espacios dedicados a la educación, donde se realizan talleres, charlas y actividades lúdicas 
+                    para niños y jóvenes.</p>
+            </div>
+        </section>
+
+        <section class="service">
+            <img src="{{ url_for('static', filename='imagenes/cul.jfif') }}" alt="Centros culturales" class="service-image">
+            <div>
+                <h2>Centros culturales</h2>
+                <p>En algunas estaciones se han habilitado centros culturales que ofrecen una variedad de actividades, como 
+                    conciertos, presentaciones teatrales y exposiciones.</p>
+            </div>
+        </section>
+        <section class="service">
+            <img src="{{ url_for('static', filename='imagenes/salu.jfif') }}" alt="Centros de salud" class="service-image">
+            <div>
+                <h2>Centros de salud</h2>
+                <p>Se han implementado centros de salud en algunas estaciones, facilitando el acceso a servicios médicos
+                    básicos para la población.</p>
+            </div>
+        </section>
+        <section class="service">
+            <img src="{{ url_for('static', filename='imagenes/com.png') }}" alt="Espacios comerciales" class="service-image">
+            <div>
+                <h2>Espacios comerciales</h2>
+                <p> En algunas estaciones se encuentran pequeñas tiendas y locales comerciales, ofreciendo productos y servicios
+                     a los usuarios.</p>
+            </div>
+        </section>
+        <section class="service">
+            <img src="{{ url_for('static', filename='imagenes/progra.jfif') }}" alt="Programas sociales" class="service-image">
+            <div>
+                <h2>Programas sociales</h2>
+                <p> Mi Teleférico desarrolla diversos programas sociales, como ferias de empleo, talleres de emprendimiento y 
+                    campañas de concientización sobre temas de salud y medio ambiente.</p>
+            </div>
+        </section>
+    </main>
+
+    <div class="social-buttons">
+        <a href="https://www.facebook.com/tu_pagina" target="_blank">
+            <button class="social-button">Facebook</button>
+        </a>
+        <a href="https://twitter.com/tu_usuario" target="_blank">
+            <button class="social-button">Twitter</button>
+        </a>
+        <a href="https://www.instagram.com/tu_usuario" target="_blank">
+            <button class="social-button">Instagram</button>
+        </a>
+        <a href="https://www.linkedin.com/in/tu_usuario" target="_blank">
+            <button class="social-button">LinkedIn</button>
+        </a>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 HERNAN FLORES FARFAN </p>
+        <p>Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

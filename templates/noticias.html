@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOTICIAS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='noticias.css') }}">
+</head>
+
+<body>
+<img src="{{ url_for('static', filename='imagenes/fondotel1.jpg') }}" alt="Imagen a Tamaño Completo" class="full-size-image">
+
+<header class="container">
+    <img src="{{ url_for('static', filename='imagenes/logo1.png') }}" alt="Logo" class="logo">
+    <div>
+        <h1><b>MI</b> TELEFERICO</b></h1>
+        <br>
+        <nav>
+            <ul><br>
+                <li><a href="{{ url_for('index') }}"><b>INICIO</b></a></li>
+                <br>
+                <li><a href="{{ url_for('quienes_somos') }}"><b>QUIÉNES SOMOS</b></a></li>
+                <br>
+                <li><a href="{{ url_for('servicios') }}"><b>SERVICIOS</b></a></li>
+                <br>
+                <li><a href="{{ url_for('noticias') }}"><b>NOTICIAS</b></a></li>
+                <br>
+                <li><a href="{{ url_for('contacto') }}"><b>CONTACTO</b></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+        <section class="team">
+            <h2>TELE-NOTICIAS</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='imagenes/no1.jpeg') }}" alt="noticia 1">
+                    <p><b>MI TELEFÉRICO Y PRO MUJER PROMUEVEN ATENCIÓN EN SALUD A MUJERES</b></p> 
+                    <div class="social-buttons">
+                        <a href="https://www.miteleferico.bo/noticia/mi-teleferico-y-pro-mujer-promueven-atencion-en-salud-a-mujeres" target="_blank">
+                            <button class="social-button">entrar</button>
+                        </a>
+                    </div>  
+                </div>
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='imagenes/no2.jpeg') }}" alt="noticia 2">
+                    <p><b>MI TELEFÉRICO Y EL BUS MUNICIPAL TRASLADARÁN HINCHAS A “EL TITÁN”</b></p> 
+                    <div class="social-buttons">
+                        <a href="https://www.miteleferico.bo/noticia/mi-teleferico-y-el-bus-municipal-de-el-alto-trasladan-a-hinchas-al-estadio" target="_blank">
+                            <button class="social-button">entrar</button>
+                        </a>
+                    </div>  
+                </div>
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='imagenes/no3.jpeg') }}" alt="noticia 3">
+                    <p><b>LÍNEA AMARILLA DE MI TELEFÉRICO INGRESA EN MANTENIMIENTO</b></p> 
+                    <div class="social-buttons">
+                        <a href="https://www.miteleferico.bo/noticia/linea-amarilla-ingresara-en-mantenimiento" target="_blank">
+                            <button class="social-button">entrar</button>
+                        </a>
+                    </div>  
+                </div>
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='imagenes/no4.jpeg') }}" alt="noticia 4">
+                    <p><b>HOSPITAL ARCO IRIS Y MI TELEFÉRICO SE UNEN EN FAVOR DE LA SALUD</b></p> 
+                    <div class="social-buttons">
+                        <a href="https://www.miteleferico.bo/noticia/convenio-con-el-hospital-arco-iris" target="_blank">
+                            <button class="social-button">entrar</button>
+                        </a>
+                    </div>  
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="cta-buttons">
+        <a href="{{ url_for('contacto') }}" class="cta-button">Contáctanos</a>
+    </div>
+</main>
+</body>
+</html>

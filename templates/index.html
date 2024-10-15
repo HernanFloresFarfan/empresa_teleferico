@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MI TELEFERICO</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}"> 
+</head>
+
+<body>
+<img src="{{ url_for('static', filename='imagenes/fondotel1.jpg') }}" alt="Imagen a Tamaño Completo" class="full-size-image">
+
+<header class="container">
+    <img src="{{ url_for('static', filename='imagenes/logo1.png') }}" alt="Logo" class="logo">
+    <div>
+        <h1><b>MI</b> TELEFERICO</b></h1>
+        <br>
+        <nav>
+            <ul><br>
+                <li><a href="{{ url_for('index') }}"><b>INICIO</b></a></li>
+                <br>
+                <li><a href="{{ url_for('quienes_somos') }}"><b>QUIÉNES SOMOS</b></a></li>
+                <br>
+                <li><a href="{{ url_for('servicios') }}"><b>SERVICIOS</b></a></li>
+                <br>
+                <li><a href="{{ url_for('noticias') }}"><b>NOTICIAS</b></a></li>
+                <br>
+                <li><a href="{{ url_for('contacto') }}"><b>CONTACTO</b></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h2>MI TELEFERICO </h2>
+    <p>Es una red de teleféricos urbanos que conecta las ciudades de La Paz y El Alto, ofreciendo una forma rápida, eficiente y panorámica 
+        de moverse por la ciudad. Con más de 10 líneas y cientos de cabinas, este sistema transporta a diario a miles de personas, tanto locales 
+        como turistas.</p>
+    <section class="testimonials">
+        <h2>Testimonios</h2>
+        <p><B>Turistas:</B> Muchos visitantes destacan la vista panorámica de la ciudad como lo más impresionante. 
+            Admirar La Paz desde las alturas, con sus montañas y la arquitectura colonial, es una experiencia única que 
+            queda grabada en la memoria. Además, valoran la <B>comodidad</B> y la <B>eficiencia</B> del servicio.</p>
+        <p><B>Locales:</B> Para los habitantes de La Paz y El Alto, el teleférico se ha convertido en una parte esencial de su vida diaria. 
+            Lo aprecian por su <B>rapidez</B> y <B>accesibilidad</B>, que les permite ahorrar tiempo en sus desplazamientos. También destacan 
+            la <B>integración</B> que ha generado entre los diferentes barrios de la ciudad.</p>
+        <p><B>Expertos:</B> Los expertos en transporte urbano resaltan la innovación del sistema y su impacto positivo en la movilidad urbana. 
+            El teleférico ha contribuido a <B>descongestionar</B> las calles y a formentar un <B>transporte más sostenible.</B></p>
+    </section>
+
+    <section class="advantages">
+        <h2>Ventajas de MI TELEFERICO</h2>
+        <p>- Reduce significativamente los tiempos de viaje, especialmente en horas pico, 
+            gracias a su diseño elevado y a la minimización de las paradas.</p>
+        <p>- Las tarifas son accesibles para la mayoría de la población, ofreciendo una 
+            alternativa económica al transporte tradicional.</p>
+        <p>- Contribuye a mejorar la calidad de vida de los habitantes al reducir el estrés
+             y la contaminación.</p>
+    </section>
+
+    <div class="cta-buttons">
+        <a href="{{ url_for('servicios') }}" class="cta-button">Ver Servicios</a>
+        <a href="{{ url_for('contacto') }}" class="cta-button">Contáctanos</a>
+    </div>
+</main>
+
+<div class="social-buttons">
+    <a href="https://www.facebook.com/tu_pagina" target="_blank">
+        <button class="social-button">Facebook</button>
+    </a>
+    <a href="https://twitter.com/tu_usuario" target="_blank">
+        <button class="social-button">Twitter</button>
+    </a>
+    <a href="https://www.instagram.com/tu_usuario" target="_blank">
+        <button class="social-button">Instagram</button>
+    </a>
+    <a href="https://www.linkedin.com/in/tu_usuario" target="_blank">
+        <button class="social-button">LinkedIn</button>
+    </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIENES SOMOS</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='quienes_somos.css') }}"> 
+</head>
+
+<body>
+<img src="{{ url_for('static', filename='imagenes/fondotel1.jpg') }}" alt="Imagen a Tamaño Completo" class="full-size-image">
+
+<header class="container">
+    <img src="{{ url_for('static', filename='imagenes/logo1.png') }}" alt="Logo" class="logo">
+    <div>
+        <h1><b>MI</b> TELEFERICO</b></h1>
+        <br>
+        <nav>
+            <ul><br>
+                <li><a href="{{ url_for('index') }}"><b>INICIO</b></a></li>
+                <br>
+                <li><a href="{{ url_for('quienes_somos') }}"><b>QUIÉNES SOMOS</b></a></li>
+                <br>
+                <li><a href="{{ url_for('servicios') }}"><b>SERVICIOS</b></a></li>
+                <br>
+                <li><a href="{{ url_for('noticias') }}"><b>NOTICIAS</b></a></li>
+                <br>
+                <li><a href="{{ url_for('contacto') }}"><b>CONTACTO</b></a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    <h2>¿Quienes somos?</h2>
+
+    <img src="{{ url_for('static', filename='imagenes/logo2.jfif') }}" alt="Logo" class="logo"> <p>Mi Teleférico es mucho más que un sistema de transporte. Somos un símbolo de progreso y modernidad para Bolivia. 
+        Hemos revolucionado la movilidad urbana en La Paz y El Alto, conectando a comunidades, fomentando el desarrollo 
+        económico y mejorando la calidad de vida de millones de personas.</p>
+    <h2>Historia</h2>
+    <p>Mi Teleférico nació como una solución innovadora para enfrentar los problemas de movilidad en La Paz y El Alto. 
+        Este ambicioso proyecto, iniciado a mediados de los años 90, buscaba conectar las dos ciudades de manera eficiente y sostenible.
+        En 2012 comenzó la construcción de las primeras líneas, y en 2014 se inauguró el sistema, transformando por completo la movilidad 
+        urbana. Hoy en día, Mi Teleférico es el sistema de teleféricos urbanos más grande del mundo, con una red extensa que conecta 
+        diversas zonas.</p>
+    <section class="testimonials">
+        <h2>Mision</h2>
+        <p>Transportamos Vidas con seguridad, eficiencia, sostenibilidad, calidez e inclusión social para el Vivir Bien</p>
+        <h2>Vision</h2>
+        <p>Ser el referente mundial de transporte urbano, que trasciende en la vida de las personas</p>
+        <section class="team">
+            <h2>Nuestro Equipo</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='imagenes/geren.jfif') }}" alt="Miembro del equipo 1">
+                    <p> <b>Gerente General:</b> <p>Lic. Juan Pérez (55 años), con 20 años de experiencia en gestión de proyectos de infraestructura y transporte público.</p> 
+                </div>
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='imagenes/control.jfif') }}" alt="Miembro del equipo 2">
+                    <h3>Equipo de Control</h3>
+                    <p>150 operadores de control, monitoreando en tiempo real 24/7 las 85 estaciones y 12 líneas.</p>
+                </div>
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='imagenes/eyt.jfif') }}" alt="Miembro del equipo 3">
+                    <h3>Ingenieria y tecnologia</h3>
+                    <p>100 ingenieros civiles, electrónicos y mecánicos, desarrollando proyectos de innovación como la 
+                        implementación de un sistema de pago móvil para 1.5 millones de usuarios.</p>
+                </div>
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='imagenes/admin.jfif') }}" alt="Miembro del equipo 4">
+                    <h3>Administración</h3>
+                    <p>80 administrativos, gestionando la documentación de más de 100,000 contratos y proveedores.</p>
+                </div>
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='imagenes/natu.jfif') }}" alt="Miembro del equipo 5">
+                    <h3>Sostenibilidad y Medio Ambiente</h3>
+                    <p>20 profesionales en medio ambiente, implementando programas de reciclaje y eficiencia energética 
+                        que reducen la huella de carbono en un 15%.</p>
+                </div>
+                <div class="team-member">
+                    <img src="{{ url_for('static', filename='imagenes/comymar.jfif') }}" alt="Miembro del equipo 6">
+                    <h3>Comercialización y Marketing</h3>
+                    <p>30 profesionales en marketing y publicidad, desarrollando campañas publicitarias que alcanzan a 
+                        2 millones de personas por mes.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="cta-buttons">
+        <a href="{{ url_for('servicios') }}" class="cta-button">Ver Servicios</a>
+        <a href="{{ url_for('contacto') }}" class="cta-button">Contáctanos</a>
+    </div>
+</main>
+
+<div class="social-buttons">
+    <a href="https://www.facebook.com/tu_pagina" target="_blank">
+        <button class="social-button">Facebook</button>
+    </a>
+    <a href="https://twitter.com/tu_usuario" target="_blank">
+        <button class="social-button">Twitter</button>
+    </a>
+    <a href="https://www.instagram.com/tu_usuario" target="_blank">
+        <button class="social-button">Instagram</button>
+    </a>
+    <a href="https://www.linkedin.com/in/tu_usuario" target="_blank">
+        <button class="social-button">LinkedIn</button>
+    </a>
+</div>
+</body>
+</html>
